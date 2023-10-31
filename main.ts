@@ -2,7 +2,7 @@
  *
  * Created by: cedric
  * Created on: Oct 2023
- * This program does a countdown and shows colors for eahc number
+ * This program does a countdown and shows colors for each number
  */
 
 // variables
