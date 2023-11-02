@@ -30,6 +30,6 @@ input.onButtonPressed(Button.A, function () {
     basic.showNumber(loopcounter)
     neopixelStrip.setPixelColor((3 - loopcounter), neopixel.colors(NeoPixelColors.Black))
     neopixelStrip.show()
-    loopcounter = loopcounter - 1 }
-
+    loopcounter = loopcounter - 1}
+    
 })
