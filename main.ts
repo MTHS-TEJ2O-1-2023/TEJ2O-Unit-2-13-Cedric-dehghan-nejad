@@ -2,7 +2,7 @@
  *
  * Created by: cedric
  * Created on: Oct 2023
- * This program does a countdown and shows colors for each number
+ * This program tells you the light level
  */
 
 // variables
@@ -22,6 +22,16 @@ basic.showIcon(IconNames.Happy)
 input.onButtonPressed(Button.A, function () {
     neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
+    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
+    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
+    neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
+    while (loopcounter >= 0) {
+        basic.pause(500)
+        basic.showNumber(loopcounter)
+        neopixelStrip.setPixelColor((3 - loopcounter), neopixel.colors(NeoPixelColors.Black))
+        neopixelStrip.show()
+        loopcounter = loopcounter - 1
+    }
     neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
     neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
     neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
