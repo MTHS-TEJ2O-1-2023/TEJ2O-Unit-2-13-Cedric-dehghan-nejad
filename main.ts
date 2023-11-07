@@ -20,7 +20,7 @@ neopixelStrip.show()
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
-    loopcounter = 4
+  loopcounter = 4
   neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
   neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
   neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Red))
