@@ -25,11 +25,11 @@ input.onButtonPressed(Button.A, function () {
     neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Red))
     neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Red))
     while (loopcounter >= 0) {
-        basic.pause(500)
-        basic.showNumber(loopcounter)
-        neopixelStrip.setPixelColor((3 - loopcounter), neopixel.colors(NeoPixelColors.Black))
-        neopixelStrip.show()
-        loopcounter = loopcounter - 1
+    neopixelStrip.show()
+    basic.pause(500)
+    basic.showNumber(loopcounter)
+    neopixelStrip.setPixelColor((3 - loopcounter), neopixel.colors(NeoPixelColors.Black))
+    neopixelStrip.show()
+    loopcounter = loopcounter - 1
     }
-
 })
